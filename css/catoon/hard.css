@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LINESeedKR-Bd";
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #414146;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../../img/story1/level/hard003.gif");
+}
+
+a {
+  text-decoration: none;
+  color: #e2e2e2;
+  outline: none;
+}
+
+.firstbox {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: grid;
+  row-gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tbox {
+  width: 800px;
+  height: auto;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.codrops-logo {
+  position: sticky;
+  top: 0; /* 로고가 화면 상단에 고정될 위치 */
+  z-index: 999; /* 다른 요소들보다 위에 표시될 수 있도록 */
+  margin-left: 1.5%;
+  margin-top: 2%;
+}
+
+.codrops-logo a img {
+  width: 64px;
+  height: 64px;
+}
+
+/* 여기는 자동 스크롤 */
+
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}

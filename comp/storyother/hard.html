@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/side/hard.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <title>hard</title>
+  </head>
+
+  <body>
+    <div class="codrops-logo" data-aos="fade-down" data-aos-delay="500">
+      <a href="../story.html">
+        <img src="../../img/small/logo.png" />
+      </a>
+    </div>
+
+    <div class="firstbox">
+      <div class="back2 up" data-aos="fade-down" data-aos-delay="600"></div>
+      <div class="bubble0" data-aos="fade">
+        <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+          <circle
+            class="circle"
+            cx="200"
+            cy="200"
+            r="200"
+            fill="gray"
+            stroke="black"
+            stroke-width="2"
+          />
+          <foreignObject x="50" y="50" width="300" height="300">
+            <p class="centered-text" data-aos="fade-up">
+              오늘따라<br>집에 가고싶다..<br>😇
+            </p>
+          </foreignObject>
+        </svg>
+      </div>
+    </div>
+    <div class="hardstar"></div>   
+    
+
+    <!-- 아래는 말풍선 -->
+
+    <div class="back1">
+      <div class="box2">
+        <a href="../../comp/catoon/hard/pasta.html">
+          <div class="bubble" data-aos="fade-left">혹시 대학생이세요?</div>
+        </a>
+        <a href="../../comp/catoon/hard/glass.html">
+          <div class="bubble" data-aos="fade-right">여기 공병 받지?</div>
+        </a>
+        <a href="../../comp/catoon/hard/word.html">
+          <div class="bubble" data-aos="fade-right">말</div>
+        </a>
+        <a href="../../comp/catoon/hard/hand.html">
+          <div class="bubble" data-aos="fade-right">손 좀 줘봐</div>
+        </a>
+      </div>
+    
+      <div class="scroll-to-top">↑</div>
+    </div>
+
+
+
+   <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+    scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollToTopButton.style.display = "block";
+      } else {
+        scrollToTopButton.style.display = "none";
+      }
+    });
+
+    const waterRipplesContainer = document.querySelector(".water-ripple");
+    const numRipples = 25; // Number of ripples to create
+
+    for (let i = 0; i < numRipples; i++) {
+      const ripple = document.createElement("div");
+      ripple.classList.add("water-ripple");
+      ripple.style.left = `${getRandomValue(0, 100)}%`;
+      ripple.style.top = `${getRandomValue(0, 100)}%`;
+      ripple.style.animationDelay = `${getRandomDelay()}s`;
+      ripple.style.animationDuration = `${getRandomValue(5, 8)}s`;
+      ripple.style.transform = `scale(${getRandomValue(0.5, 2)})`;
+
+      const innerRippleContainer = document.createElement("div");
+      innerRippleContainer.classList.add("inner-ripple-container");
+      ripple.appendChild(innerRippleContainer);
+
+      const numInnerRipples = 2; // Number of inner ripples to create
+      for (let j = 0; j < numInnerRipples; j++) {
+        const innerRipple = document.createElement("div");
+        innerRipple.classList.add("inner-ripple");
+        innerRipple.style.animationDelay = `${getRandomDelay()}s`;
+        innerRipple.style.animationDuration = `${getRandomValue(5, 9)}s`;
+        innerRipple.style.transform = `scale(${getRandomValue(0.3, 0.7)})`;
+        innerRippleContainer.appendChild(innerRipple);
+      }
+
+      waterRipplesContainer.appendChild(ripple);
+    }
+  });
+
+  function getRandomValue(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  function getRandomDelay() {
+    const minDelay = 0; // Minimum delay in seconds
+    const maxDelay = 30; // Maximum delay in seconds
+    return getRandomValue(minDelay, maxDelay);
+  }
+</script>
+
+    
+    
+    
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

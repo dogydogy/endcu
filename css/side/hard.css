@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LINESeedKR-Bd";
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #414146;
+  background: #a0a0a0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("../../img/./story1/bg_1.gif"); */
+}
+
+a {
+  text-decoration: none;
+  color: #e2e2e2;
+  outline: none;
+}
+
+.firstbox {
+  margin-top: 0%;
+  margin-bottom: 20%;
+  display: grid;
+  row-gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box2 {
+  margin-top: 0%;
+  display: grid;
+  row-gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.firstbox0 {
+  display: grid;
+  row-gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bubble {
+  background-color: #ffffff;
+  color: #313131;
+  border-radius: 10px;
+  width: 350px;
+  padding: 20px;
+  margin-top: 300px;
+  margin-bottom: 400px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.bubble0 {
+  color: #292929;
+  border-radius: 10px;
+  width: 700px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 32px;
+  padding: 10%;
+}
+
+.codrops-logo {
+  margin-left: 1.5%;
+  margin-top: 2%;
+}
+
+.codrops-logo a img {
+  width: 64px;
+  height: 64px;
+}
+
+/* 여기는 자동 스크롤 */
+
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* 여기는 배경이미지 */
+
+.back1 {
+  background-image: url("../../img/story1/level/hard003.gif");
+}
+
+.back2 {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.back2::before,
+.back2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.back2::after {
+  background-image: url("../../img/story1/level/hard3.gif");
+  background-position: right;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.up {
+  margin-top: -10%; /* 원하는 만큼 위로 이동할 값 */
+}
+
+.hardstar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/story1/level/hard_star.gif");
+  z-index: -2;
+}
+
+/* 여기는 중앙 동그라미 애니메이션 */
+
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+.circle {
+  stroke-dasharray: 1256; /* 원의 둘레 값 */
+  stroke-dashoffset: 0;
+  animation: draw-circle 1.5s linear forwards;
+}
+
+@keyframes draw-circle {
+  0% {
+    stroke-dashoffset: 1256; /* 시작 상태 */
+  }
+  100% {
+    stroke-dashoffset: 0; /* 완료 상태 */
+  }
+}
+
+/* 여기는 물파동 */
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.water-ripple {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.water-ripple::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  opacity: 0;
+  transform: scale(0);
+  animation: ripple 5s linear infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.inner-ripple-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.inner-ripple {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.5px solid rgb(255, 255, 255);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 100s linear infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes inner-ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,453 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LINESeedKR-Bd";
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TmoneyRoundWindExtraBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-image: url("../img/bg.gif");
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #414146;
+}
+
+.active {
+  color: #981ce5;
+}
+
+.codrops-links {
+  position: relative;
+  width: 100vw;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.codrops-header {
+  position: absolute;
+  z-index: 100;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  color: #f0f0f0;
+  z-index: 9999999;
+}
+
+.codrops-links {
+  position: relative;
+  width: 100%;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: inline-block;
+	white-space: nowrap; */
+  /* text-align: center; */
+  /* border: 2px solid #414146; */
+}
+
+.codrops-logo {
+  /* font-size: 28px; */
+  width: 64px;
+  height: 64px;
+}
+
+.codrops-logo a img {
+  width: 64px;
+  height: 64px;
+}
+
+.codrops-nav_list {
+  display: flex;
+  align-items: center;
+}
+.codrops-nav_list li {
+  margin-left: 45px;
+}
+.codrops-nav_list li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.codrops-nav_list li a.active {
+  color: #981ce5;
+}
+.codrops-header li a:hover {
+  color: #981ce5;
+}
+
+.text0 {
+  font-family: "TmoneyRoundWindExtraBold";
+  text-align: left;
+  font-size: 50px;
+  position: absolute;
+  left: 200px;
+  bottom: 200px;
+  /* margin-right: 60%; */
+  /* max-width: 100%; */
+  /* margin-top: 30%; */
+  /* padding-left: 2%; */
+  text-shadow: 2px 2px 4px rgba(0, 5, 0, 0.2);
+}
+
+/* 여기는 말풍선 */
+
+.boxs {
+  width: 100vw;
+  position: relative;
+  /* margin-top: 10%; */
+}
+
+.leftbox {
+  margin-top: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10%;
+}
+
+.rightbox {
+  margin-top: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10%;
+}
+
+.box1 {
+  background-color: #252525;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.container_tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #981ce5;
+  margin-bottom: 10%;
+}
+
+.image-wrapper_tip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nope {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-color: #ffffff00;
+  margin-bottom: 10%;
+}
+
+/* 여기아래는 비디오 */
+
+.fato {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  margin: 0;
+  padding: 20px;
+}
+
+.fato video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* 비디오를 배경으로 설정 */
+}
+
+/* 여기는 박스5개 */
+
+.firstbox {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.easy {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/inv/csta.gif");
+}
+
+.str {
+  width: calc(33.33% - 20px);
+  max-width: 300px;
+  /* width: 300px; */
+  /* 수정된 부분 */
+  height: 450px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경색 추가 */
+  border-radius: 5% 5% 5% 5%;
+  /* border: #000; */
+}
+
+.str-image {
+  width: 100%;
+  height: auto;
+  /* border: #453e48 solid; */
+  border-radius: 10% 10% 10% 10%;
+}
+
+.str-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffe063;
+}
+
+.str-desc {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+/* 여기는 창문 와장창 */
+
+.container-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 400px;
+}
+
+.image-wrapper {
+  position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.png-image {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  width: 70%;
+  z-index: 1;
+}
+
+.png-image-1 {
+  max-width: 80%;
+  bottom: 0%;
+  left: 15%;
+}
+
+.png-image-2 {
+  max-width: 50%;
+  bottom: 40%;
+  left: 60%;
+}
+
+.jpg-image {
+  max-width: 100%;
+  margin-top: 20%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+/* .qrcode {
+  margin-top: 50%;
+  margin-bottom: 25%;
+  background-image: url(../img/story1/level/star.gif);
+  width: 100%;
+  position: relative;
+} */
+
+/* 여기는 맨 하단 */
+
+.qrvido {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+.qrvido video {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-position: center;
+  object-fit: cover;
+  /* 비디오를 배경으로 설정 */
+}
+
+.qrvido_text {
+  position: absolute;
+  font-family: "TmoneyRoundWindExtraBold";
+  margin-right: 60%;
+  text-align: left;
+  font-size: 50px;
+  max-width: 100%;
+  margin-top: 35%;
+  padding-left: 5%;
+  text-shadow: 2px 2px 4px rgba(0, 5, 0, 0.2);
+  z-index: 9999;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5f289e;
+  color: #ffffff;
+}
+
+/* 여기아래부터 모바일 */
+
+@media only screen and (max-width: 768px) {
+  .container-tip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: -150%;
+  }
+
+  .boxs {
+    margin-top: 80%;
+  }
+
+  .image-wrapper {
+    margin-top: 100%;
+    margin-bottom: 50%;
+  }
+
+  .easy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    /* align-items: center; */
+  }
+
+  .str {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 30px);
+    height: 350px;
+    gap: 10px;
+  }
+
+  .str-text {
+    font-size: 18px;
+  }
+
+  .str-desc {
+    font-size: 13px;
+  }
+
+  .codrops-nav_list {
+    display: none;
+  }
+
+  .codrops-logo {
+    margin-left: -5%;
+  }
+
+  .footer-container {
+    margin-top: 300%;
+  }
+
+  .fato video {
+    width: 100%;
+    object-fit: cover;
+    object-position: 70% 100%;
+  }
+
+  .qrvido_text {
+    display: none;
+    margin-top: 500px;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .qrvido {
+    /* height: auto; */
+    padding-bottom: 20px; /* 수정: 아래 여백 추가 */
+  }
+
+  .qrvido video {
+    margin-top: 0;
+    width: 100%;
+    /* height: auto;  */
+    /* 수정: 비디오의 높이 자동 조정 */
+  }
+}

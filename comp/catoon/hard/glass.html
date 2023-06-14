@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../css/catoon/hard.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <title>glass</title>
+  </head>
+
+  <body>
+    <div class="codrops-logo" data-aos="fade-down" data-aos-delay="500">
+      <a href="../../storyother/hard.html">
+        <img src="../../../img/small/logo.png" />
+      </a>
+    </div>
+
+    <div class="firstbox">
+      <div class="tbox" data-aos="fade-down" data-aos-delay="600">
+        <img src="../../../img/catoon/hard_c/glass/Frame 138.jpg" />
+      </div>
+
+      <div class="tbox" data-aos="fade-down">
+        <img src="../../../img/catoon/hard_c/glass/Frame 139.jpg" />
+      </div>
+
+      <div class="tbox">
+        <img src="../../../img/catoon/hard_c/glass/Frame 140.jpg" />
+      </div>
+
+      <div class="tbox">
+        <img src="../../../img/catoon/hard_c/glass/Frame 141.jpg" />
+      </div>
+
+      <div class="tbox">
+        <img src="../../../img/catoon/hard_c/glass/Frame 142.jpg" />
+      </div>
+
+      <div class="tbox">
+        <img src="../../../img/catoon/hard_c/glass/Frame 143.jpg" />
+      </div>
+
+      <div class="scroll-to-top">↑</div>
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+        scrollToTopButton.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 200) {
+            scrollToTopButton.style.display = "block";
+          } else {
+            scrollToTopButton.style.display = "none";
+          }
+        });
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

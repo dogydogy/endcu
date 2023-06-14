@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LINESeedKR-Bd";
+}
+
+body {
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #414146;
+  background: #f0f0f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../img/bg.gif");
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #414146;
+}
+
+.codrops-links {
+  position: relative;
+  width: 100vw;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.codrops-header {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  color: #f0f0f0;
+}
+
+
+.codrops-logo {
+  margin-right: auto;
+}
+
+.codrops-logo a img {
+  width: 64px;
+  height: 64px;
+}
+
+.codrops-nav_list li {
+  margin-left: 45px;
+}
+
+.codrops-nav_list li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.codrops-nav_list li a.active {
+  color: #981ce5;
+}
+
+.codrops-header li a:hover {
+  color: #981ce5;
+}
+
+.firstbox {
+  margin-top: 10%;
+  margin-bottom: 60%;
+  display: grid;
+  row-gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.padding {
+  padding-top: 50%;
+}
+
+.bubble {
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 여기는 캐릭터 배경에서 중앙으로 */
+
+.container_story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.png-image {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  width: 70%;
+  z-index: 1;
+}
+
+.png-image-1 {
+  max-width: 80%;
+  bottom: -20%;
+  left: 0;
+}
+
+.png-image-2 {
+  max-width: 35%;
+  bottom: 20%;
+  right: 15%;
+}
+
+.jpg-image {
+  max-width: 100%;
+  margin-top: 20%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.text {
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  font-size: 50px;
+}
+
+/* ----------------------여기는 gif */
+
+.easy {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.str {
+  width: calc(33.33% - 20px);
+  max-width: 30%;
+  height: auto;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border: #000;
+}
+
+.str-image,
+.str-gif {
+  width: 100%;
+  height: auto;
+  border: #453e48 solid;
+  border-radius: 10% 10% 10% 10%;
+}
+
+.str-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.str:hover .str-gif {
+  opacity: 1;
+}
+
+.str-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.str-desc {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ------------------여기는 푸터 */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  clear: both;
+  margin-top: 10%;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.codrops-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.codrops-nav_list {
+  display: flex;
+  justify-content: flex-start;
+}
+.codrops-nav_list li {
+  margin-left: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 9vw;
+    margin-top: 80%;
+    margin-bottom: 100%;
+  }
+
+  .image-wrapper {
+    margin-top: 100%;
+  }
+
+  .easy {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -100%;
+  }
+
+  .str {
+    width: 100%;
+    max-width: 70%;
+    margin: 10px 0;
+  }
+
+  .str {
+    margin-top: 50%;
+  }
+
+  .str-text {
+    font-size: 5.5vw;
+  }
+
+  .str-desc {
+    font-size: 3.5vw;
+  }
+
+  .codrops-nav_list {
+    display: none;
+  }
+
+  .codrops-logo {
+    margin-left: -5%;
+  }
+
+  .footer-container {
+    margin-top: 300%;
+  }
+}

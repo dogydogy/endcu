@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LINESeedKR-Bd";
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #414146;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: #e2e2e2;
+  outline: none;
+}
+
+.firstbox {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: grid;
+  row-gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.firstbox0 {
+  margin-top: 0%;
+  display: grid;
+  row-gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 여기는 배경이미지 */
+
+.back1 {
+  background-image: url("../../img//bg.gif");
+  margin-top: 300px;
+}
+
+.back2 {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.back2::before,
+.back2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.back2::before {
+  background-image: url("../../img/story1/level/easy.gif");
+  background-position: right;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.back2::after {
+  background-image: url("../../img/story1/level/easy.gif");
+  background-position: right;
+  right: 0;
+}
+
+.up {
+  margin-top: -10%; /* 원하는 만큼 위로 이동할 값 */
+}
+
+.star {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/story1/level/star1.gif");
+  z-index: -2;
+}
+
+/* 여기는 말풍선 */
+
+.bubble {
+  background-color: #303030;
+  color: #f0f0f0;
+  border-radius: 10px;
+  width: 350px;
+  padding: 20px;
+  margin-top: 300px;
+  margin-bottom: 400px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.bubble0 {
+  color: #292929;
+  border-radius: 10px;
+  width: 700px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 32px;
+  padding: 10%;
+}
+
+.codrops-logo {
+  margin-left: 1.5%;
+  margin-top: 2%;
+}
+
+.codrops-logo a img {
+  width: 64px;
+  height: 64px;
+}
+
+/* 여기는 자동 스크롤 */
+
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* 여기는 중앙 동그라미 애니메이션 */
+
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+.circle {
+  stroke-dasharray: 1256; /* 원의 둘레 값 */
+  stroke-dashoffset: 0;
+  animation: draw-circle 1.5s linear forwards;
+}
+
+@keyframes draw-circle {
+  0% {
+    stroke-dashoffset: 1256; /* 시작 상태 */
+  }
+  100% {
+    stroke-dashoffset: 0; /* 완료 상태 */
+  }
+}

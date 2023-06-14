@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/side/easy.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <title>easy</title>
+  </head>
+
+  <body>
+    
+    <div class="codrops-logo" data-aos="fade-down" data-aos-delay="500">
+      <a href="../story.html">
+        <img src="../../img/small/logo.png" />
+      </a>
+    </div>
+
+    <div class="firstbox">
+      <div class="back2 up" data-aos="fade-down" data-aos-delay="600"></div>
+      <div class="bubble0" data-aos="fade">
+        <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+          <circle
+            class="circle"
+            cx="200"
+            cy="200"
+            r="200"
+            fill="none"
+            stroke="black"
+            stroke-width="2"
+          />
+          <foreignObject x="50" y="50" width="300" height="300">
+            <p class="centered-text" data-aos="fade-up">
+              최선을 다해<br>모시겠습니다!<br>😇
+            </p>
+          </foreignObject>
+        </svg>
+      </div>
+    </div>
+    <div class="star"></div>   
+
+
+<!-- 여기는 말풍선 -->
+
+    <div class="back1">
+
+    <div class="firstbox0">
+      <a href="../catoon/easy/rice.html">
+        <div class="bubble" data-aos="fade-right">밥은 묵었나?</div>
+      </a>
+      <a href="../catoon/easy/money.html">
+        <div class="bubble" data-aos="fade-right">내 딸 같아서</div>
+      </a>
+      <a href="../catoon/easy/monk.html">
+        <div class="bubble" data-aos="fade-right">
+          중은 나눠가지는 것입니다.
+        </div>
+      </a>
+    </div>
+
+    <div class="scroll-to-top">↑</div>
+  </div>
+
+
+
+
+  
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+        scrollToTopButton.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 200) {
+            scrollToTopButton.style.display = "block";
+          } else {
+            scrollToTopButton.style.display = "none";
+          }
+        });
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

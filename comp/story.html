@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/story.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>story</title>
+  </head>
+  <body>
+    <!-- 네비는 일단 나중에 하자 -->
+    <div>
+      <div class="slider-container">
+        <div class="slider-content">
+          <ul class="codrops-nav_list2">
+            <li><a href="../comp/character.html">캐릭터</a></li>
+            <li><a href="../comp/tip.html">꿀팁</a></li>
+            <li><a href="../comp/jmt.html">추천메뉴</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 흑흑 너무 어려워요 -->
+
+      <header class="codrops-header">
+        <!-- 네비게이션바  -->
+        <div class="codrops-links">
+          <div class="codrops-logo" data-aos="fade-down" data-aos-delay="500">
+            <a href="../index.html">
+              <img src="../img/small/logo.png" />
+            </a>
+          </div>
+          <!-- 웹에서는 가로로 배치 -->
+          <ul class="codrops-nav_list">
+            <li data-aos="fade-down" data-aos-delay="500">
+              <a href="../comp/story.html" class="active">Story</a>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="500">
+              <a href="../comp/character.html">캐릭터</a>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="500">
+              <a href="../comp/tip.html">꿀팁</a>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="500">
+              <a href="../comp/jmt.html">추천메뉴</a>
+            </li>
+          </ul>
+          <!-- 모바일에서는 버튼으로 보이도록 추가 -->
+          <button id="toggleButton"><img src="../img/ham.png" alt=""></button>
+        </div>
+      </header>
+
+      <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+          var toggleButton = document.getElementById("toggleButton");
+          var sliderContainer = document.querySelector(".slider-container");
+          var sliderContent = document.querySelector(".slider-content");
+
+          toggleButton.addEventListener("click", function () {
+            sliderContainer.classList.toggle("active");
+          });
+
+          sliderContainer.addEventListener("click", function (event) {
+            if (event.target === sliderContainer) {
+              sliderContainer.classList.remove("active");
+            }
+          });
+        });
+      </script>
+
+      <div class="firstbox">
+        <div class="text" data-aos="fade-up">'필요한 게 있으신가요?'</div>
+      </div>
+      <div class="container_story">
+        <div class="image-wrapper">
+          <img
+            src="../img/obj/st1.png"
+            data-aos="fade-down-right"
+            data-aos-delay="100"
+            alt="Image 1"
+            class="png-image png-image-1"
+          />
+          <img
+            src="../img/obj/st2.png"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            alt="Image 3"
+            class="png-image png-image-2"
+          />
+          <img
+            src="../img/obj/back1.png"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            alt="Image 2"
+            class="jpg-image"
+          />
+        </div>
+
+        <!------------------------------- 아래 gif ------------------------------>
+
+        <div class="firstbox">
+          <div class="easy">
+            <div class="str">
+              <img
+                src="../img/story1/log1.jpg"
+                class="str-image"
+                data-aos="fade-up"
+                data-aos-delay="0"
+                alt="Image 1"
+              />
+              <a href="storyother/easy.html">
+                <img src="../img/story1/easy.gif" class="str-gif" alt="GIF 1" />
+              </a>
+              <div class="str-text">따뜻하고 순한 만화</div>
+              <div class="str-desc">
+                아직 세상은 살만할지도? <br />
+                인상 깊었던 손님들 이야기
+              </div>
+            </div>
+
+            <div class="str">
+              <img
+                src="../img/story1/log2.jpg"
+                class="str-image"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                alt="Image 2"
+              />
+              <a href="storyother/hard.html">
+                <img src="../img/story1/hard.gif" class="str-gif" alt="GIF 2" />
+              </a>
+              <div class="str-text">뜨겁고 매운 만화</div>
+              <div class="str-desc">
+                빌런이 꽤나 많을지도? <br />
+                세상은 넓고 음... 그렇구나 하는 이야기
+              </div>
+            </div>
+            <div class="str">
+              <img
+                src="../img/story1/log3.jpg"
+                class="str-image"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                alt="Image 3"
+              />
+              <a href="storyother/bob.html">
+                <img
+                  src="../img/story1/bomba.gif"
+                  class="str-gif"
+                  alt="GIF 3"
+                />
+              </a>
+              <div class="str-text">차르봄바 만화</div>
+              <div class="str-desc">
+                사탄도 저리가라 할 정도! <br />
+                살면서 영원한 안주감 이야기
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="firstbox0">
+
+      <div class="bubble"></div>
+
+
+      <div class="bubble" data-aos="fade-right">포켓몬빵 있어요?</div>
+
+      <div class="bubble" data-aos="fade-right">담배 줘</div>
+
+      <div class="bubble" data-aos="fade-right">동전 좀 바꿔주세요</div>
+
+      <div class="bubble" data-aos="fade-left">어디 성씨요?</div>
+
+      <div class="bubble" data-aos="fade-left">복권 좀 바꿔주쇼</div>
+
+      <div class="bubble" data-aos="fade-left">외상이요</div>
+
+      <div class="bubble" data-aos="fade-left">혹시 대학생이세요?</div>
+
+      <div class="bubble" data-aos="fade-left">저 방송 좀 할게요</div>
+    </div> -->
+
+    <!-- <div class="firstbox">
+      <img src="../img/poket/s1.jpg" alt="">
+      <img src="../img/poket/s2.jpg" alt="">
+      <img src="../img/poket/s3.png" alt="">
+      <img src="../img/poket/s4.jpg" alt="">
+      <img src="../img/poket/s5.png" alt="">
+    </div> -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-text">ⓒ kim_boyoung</div>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

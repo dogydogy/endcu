@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tip.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Tip</title>
+  </head>
+  <body>
+    <div>
+      <div class="slider-container">
+        <div class="slider-content">
+          <ul class="codrops-nav_list2">
+            <li><a href="../comp/tip.html">꿀팁</a></li>
+            <li><a href="../comp/character.html">캐릭터</a></li>
+            <li><a href="../comp/jmt.html">맛탱구리</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header class="codrops-header">
+      <!-- 네비게이션바  -->
+      <div class="codrops-links">
+        <div class="codrops-logo" data-aos="fade-down" data-aos-delay="500">
+          <a href="../index.html">
+            <img src="../img/small/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <!-- 웹에서는 가로로 배치 -->
+        <ul class="codrops-nav_list">
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/story.html">Story</a>
+          </li>
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/character.html">캐릭터</a>
+          </li>
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/tip.html" class="active">꿀팁</a>
+          </li>
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/jmt.html">추천메뉴</a>
+          </li>
+        </ul>
+        <!-- 모바일에서는 버튼으로 보이도록 추가 -->
+        <button id="toggleButton"><img src="../img/ham.png" alt=""></button>
+      </div>
+    </header>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        var toggleButton = document.getElementById("toggleButton");
+        var sliderContainer = document.querySelector(".slider-container");
+        var sliderContent = document.querySelector(".slider-content");
+
+        toggleButton.addEventListener("click", function () {
+          sliderContainer.classList.toggle("active");
+        });
+
+        sliderContainer.addEventListener("click", function (event) {
+          if (event.target === sliderContainer) {
+            sliderContainer.classList.remove("active");
+          }
+        });
+      });
+
+      AOS.init();
+    </script>
+    <div class="fato">
+      <p class="text0" data-aos="fade-up">
+        전국 편돌이의 집합체!
+        <br />
+        포켓 CU!
+      </p>
+      <video src="../img/tip/Assetend.mp4" poster="대체할 이미지 경로" loop="" autoplay="" muted=""></video>
+    </div>
+
+    <div class="boxs">
+      <div class="leftbox">
+        <div class="box1" data-aos="fade-right">2+1 상품인데 3개는 다 못먹겠어..</div>
+      </div>
+
+      <div class="rightbox">
+        <div class="box1" data-aos="fade-left">오늘도 연세우유빵을 놓쳤어...</div>
+      </div>
+
+      <div class="leftbox">
+        <div class="box1" data-aos="fade-right">배는 고픈데, 나가기 너무 귀찮은걸...</div>
+      </div>
+
+      <div class="rightbox">
+        <div class="box1" data-aos="fade-left">여기에는 내가 찾는게 없나?</div>
+      </div>
+
+      <!-- <div class="nope"></div> -->
+
+      <!-- 여기는 창문 와장창 -->
+    </div>
+
+    <div class="container-tip">
+      <div class="image-wrapper">
+        <img src="../img/tip/Complete.png" data-aos="fade-right" data-aos-delay="300" alt="Image 1" class="png-image png-image-1" />
+        <img src="../img/tip/Complete2.png" data-aos="fade-right" data-aos-delay="500" alt="Image 3" class="png-image png-image-2" />
+        <img src="../img/tip/hole.png" data-aos="fade-up" data-aos-delay="0" alt="Image 2" class="jpg-image" />
+      </div>
+    </div>
+
+    <div class="firstbox">
+      <div class="easy">
+        <div class="str">
+          <img src="../img/tip/poket1.jpg" class="str-image" data-aos="fade-up" data-aos-delay="0" alt="Image 1" />
+
+          <div class="str-text">나중에 먹고싶을땐? 키핑쿠폰!</div>
+          <div class="str-desc">
+            1+1, 2+1 상품이지만 배부르고 양이 많다면? <br />
+            키핑 쿠폰으로 나중에 가지러 올 수 있어요!
+          </div>
+        </div>
+
+        <div class="str">
+          <img src="../img/tip/poket2.jpg" class="str-image" data-aos="fade-up" data-aos-delay="0" alt="Image 1" />
+
+          <div class="str-text">매번 기다리지말고 예약하자!</div>
+          <div class="str-desc">
+            너무 인기많거나 구하기 힘든 상품은 <br />
+            미리 예약해서 구매하러 가면 되요! 신상도 가능!
+          </div>
+        </div>
+        <div class="str">
+          <img src="../img/tip/poket3.jpg" class="str-image" data-aos="fade-up" data-aos-delay="0" alt="Image 1" />
+
+          <div class="str-text">나가기 귀찮다면 홈배송!</div>
+          <div class="str-desc">
+            놀랍게도 편의점도 배달이 된다구요~ <br />
+            상품을 장바구니에 담고 주문하면 집으로 쏙!
+          </div>
+        </div>
+
+        <div class="str">
+          <img src="../img/tip/poket4.jpg" class="str-image" data-aos="fade-up" data-aos-delay="50" alt="Image 2" />
+
+          <div class="str-text">편의점 탐방은 그만!</div>
+          <div class="str-desc">어플로 우리집 근처 편의점에는 어떤 물건이 있고, <br />재고가 얼마나 있는지 알 수 있어요!</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qrvido">
+      <p class="qrvido_text" data-aos="fade-up">지금 바로 다운하세요</p>
+      <video src="../img/tip/qrcode_e.mp4" poster="대체할 이미지 경로" loop="" autoplay="" muted=""></video>
+    </div>
+
+    <footer>ⓒ kim_boyoung</footer>
+  </body>
+</html>

@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LINESeedKR-Bd";
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #414146;
+}
+
+.active {
+  color: #981ce5;
+}
+
+.codrops-links {
+  position: relative;
+  width: 100vw;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.codrops-header {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  color: #f0f0f0;
+  z-index: 99999999;
+}
+
+.codrops-logo {
+  /* font-size: 28px; */
+  width: 64px;
+  height: 64px;
+}
+
+.codrops-logo a img {
+  width: 64px;
+  height: 64px;
+}
+
+.codrops-nav_list {
+  display: flex;
+  align-items: center;
+}
+.codrops-nav_list li {
+  margin-left: 45px;
+}
+.codrops-nav_list li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.codrops-nav_list li a.active {
+  color: #981ce5;
+}
+.codrops-header li a:hover {
+  color: #981ce5;
+}
+
+.charactor-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 180px;
+  position: relative;
+}
+
+.charactor-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+}
+
+.charactor-wrap img {
+  max-width: 480px;
+  min-width: 200px;
+  margin-right: 50px;
+}
+
+.text-box {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+/* 이 위까지 만들어뒀던 텍스트이미지박스 */
+
+.test1 {
+  position: relative;
+  /* top: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 200px;
+  /* margin-top: 25%; */
+  /* margin-bottom: 25%; */
+}
+
+.ima {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.hov {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.hov:hover {
+  content: url("../img/inv/C4.jpg");
+}
+
+.boxtext {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 10px;
+  background-color: rgba(252, 252, 252, 0.616);
+  color: rgb(0, 0, 0);
+  overflow-wrap: break-word; /* 줄바꿈 추가 */
+  font-size: 25px;
+}
+
+.box-left {
+  position: static;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(252, 252, 252, 0.616);
+  color: rgb(0, 0, 0);
+  overflow-wrap: break-word; /* 줄바꿈 추가 */
+  font-size: 25px;
+}
+
+.border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.str {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/inv/poster.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.str2 {
+  background-image: url("../img/bg.gif");
+}
+
+.easy2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.chrat {
+  width: calc(33.33% - 20px);
+  max-width: 30%;
+  height: auto;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border: #000;
+}
+
+.str-image,
+.str-gif {
+  width: 100%;
+  height: auto;
+  border: #453e48 solid;
+  border-radius: 10% 10% 10% 10%;
+}
+
+.str-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.str-desc {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+footer {
+  color: #89898d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ------------------------드랍 전용 이미지 칸 건들지마!! */
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.textbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* background-color: white; */
+}
+
+/* ---------------------드랍효과 건들지마!! */
+
+.drop-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: -20%;
+}
+
+/* .drop-box { 이전의 드랍효과
+    position: relative;
+    width: 100%;
+    margin-top: 16vh;
+    height: 70vh;
+    overflow: hidden;
+    margin-bottom: 20%;
+  } */
+
+.falling-images {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+}
+
+.falling-image {
+  position: absolute;
+  /* top: -100px; */
+  left: calc(50% - 50px);
+  z-index: 1;
+}
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cup {
+    margin-top: 10px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .boxtext {
+    font-size: 12px;
+  }
+
+  .str {
+    width: 100%;
+    min-height: 500px;
+    background-image: url("../img/inv/poster.gif");
+    background-size: cover; /* 배경 이미지를 화면에 꽉 채우도록 설정 */
+    background-position: center; /* 배경 이미지를 가운데 정렬 */
+  }
+
+  .box-left p {
+    font-size: 12px;
+  }
+
+  .str-desc {
+    font-size: 13px;
+  }
+}

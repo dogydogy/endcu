@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/charactor.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>charactor</title>
+  </head>
+
+  <body>
+    <div class="slider-container">
+      <div class="slider-content">
+        <ul class="codrops-nav_list2">
+          <li><a href="../comp/story.html">스토리</a></li>
+          <li><a href="../comp/tip.html">꿀팁</a></li>
+          <li><a href="../comp/jmt.html">추천메뉴</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="codrops-header">
+      <!-- 네비게이션바  -->
+      <div class="codrops-links">
+        <div class="codrops-logo" data-aos="fade-down" data-aos-delay="500">
+          <a href="../index.html">
+            <img src="../img/small/logo.png" />
+          </a>
+        </div>
+        <!-- 웹에서는 가로로 배치 -->
+        <ul class="codrops-nav_list">
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/story.html">Story</a>
+          </li>
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/character.html" class="active">캐릭터</a>
+          </li>
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/tip.html">꿀팁</a>
+          </li>
+          <li data-aos="fade-down" data-aos-delay="500">
+            <a href="../comp/jmt.html">추천메뉴</a>
+          </li>
+        </ul>
+        <!-- 모바일에서는 버튼으로 보이도록 추가 -->
+        <button id="toggleButton"><img src="../img/ham.png" alt=""></button>
+      </div>
+    </header>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        var toggleButton = document.getElementById("toggleButton");
+        var sliderContainer = document.querySelector(".slider-container");
+        var sliderContent = document.querySelector(".slider-content");
+
+        toggleButton.addEventListener("click", function () {
+          sliderContainer.classList.toggle("active");
+        });
+
+        sliderContainer.addEventListener("click", function (event) {
+          if (event.target === sliderContainer) {
+            sliderContainer.classList.remove("active");
+          }
+        });
+      });
+    </script>
+    <div class="str">
+      <div class="falling-images-container">
+        <div class="drop-box">
+          <div class="falling-images">
+            <!-- 추가적인 이미지들을 여기에 추가 -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="str2">
+      <div class="test1">
+        <img class="ima" src="../img/inv/bo.gif" alt="Image" />
+      </div>
+
+      <div class="test1">
+        <img class="hov" src="../img/inv/C3.jpg" alt="Image" />
+        <div class="box-left">
+          <p>
+            이름 : 보 <br /><br />
+
+            편의점 생활 1년 n개월 째인 편돌이!<br /><br />쥐꼬리만한 알바비를
+            벌고 있지만, 나름 최선을 다해 알바를 하는 모양. <br /><br />
+            종종 빌런들 탓에 그만두고 싶은 생각이 99%나 된다고 한다...<br />
+            그러나 통장 잔고를 보면 오직 1%의 희망으로 알바를 다니고 있다
+          </p>
+        </div>
+      </div>
+
+      <div class="test1">
+        <img class="ima" src="../img/inv/C1.jpg" alt="Image" />
+        <img class="ima" src="../img/inv/C2.jpg" alt="Image" />
+        <div class="boxtext">
+          <p>
+            알바하는게 귀찮고, 피곤하지만 아크릴 키링 등 랜덤 굿즈들을 보며
+            행복한 시간을 보내고 있다
+          </p>
+        </div>
+      </div>
+
+      <div class="easy2">
+        <div class="chrat">
+          <img
+            src="../img/inv/chra1.gif"
+            class="str-image"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            alt="Image 1"
+          />
+
+          <div class="str-text">[비행]</div>
+          <div class="str-desc">비행기를 타는 게 무서워서 나온 작품</div>
+        </div>
+
+        <div class="chrat">
+          <img
+            src="../img/inv/chra1_1.gif"
+            class="str-image"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            alt="Image 2"
+          />
+
+          <div class="str-text">[면 러버]</div>
+          <div class="str-desc">빵보다는 밥, 밥보다는 면이 좋은 작품</div>
+        </div>
+      </div>
+
+      <div class="easy2">
+        <div class="chrat">
+          <img
+            src="../img/inv/chra1_2.gif"
+            class="str-image"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            alt="Image 1"
+          />
+
+          <div class="str-text">[오늘도 근무]</div>
+          <div class="str-desc">:언제나 친절함은 유지한다는 작품</div>
+        </div>
+
+        <div class="chrat">
+          <img
+            src="../img/inv/chra1_4.gif"
+            class="str-image"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            alt="Image 2"
+          />
+
+          <div class="str-text">[왜곡된 인사]</div>
+          <div class="str-desc">언제나 밝게 인사한다는 뜻을 내포한 작품</div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>ⓒ kim_boyoung</footer>
+    <script>
+      window.onload = function () {
+        const fallingImagesContainer =
+          document.querySelector(".falling-images");
+        const numberOfImages = 50; // 생성할 이미지 개수
+        const boxWidth = fallingImagesContainer.clientWidth; // 박스의 너비
+        const boxHeight = fallingImagesContainer.clientHeight; // 박스의 높이
+
+        // 사용할 이미지 배열
+        const imageSources = [
+          "../img/obj/st1.png",
+          "../img/inv/smallc.png",
+          // ... 다른 이미지 경로들을 추가해주세요
+        ];
+
+        for (let i = 0; i < numberOfImages; i++) {
+          const image = document.createElement("img");
+          image.classList.add("falling-image");
+
+          // 이미지 랜덤 선택
+          const randomIndex = Math.floor(Math.random() * imageSources.length);
+          image.src = imageSources[randomIndex];
+
+          image.alt = "";
+
+          // 이미지 크기 랜덤 설정 (50px 이상 150px 이하)
+          const imageSize = Math.floor(Math.random() * 101) + 50;
+          image.style.width = `${imageSize}px`;
+
+          // 이미지 위치 랜덤 설정 (0px 이상 boxWidth - imageSize 이하)
+          const startOffset = Math.random() * (boxWidth - imageSize);
+          image.style.left = `${startOffset}px`;
+
+          fallingImagesContainer.appendChild(image);
+
+          // 애니메이션에 필요한 변수들
+          const initialVelocityX = Math.random() * 10 - 5; // 초기 X 속도
+          const initialVelocityY = Math.random() * 5 + 5; // 초기 Y 속도
+          let positionX = startOffset;
+          let positionY = -imageSize;
+          let velocityX = initialVelocityX;
+          let velocityY = initialVelocityY;
+          let rotationAngle = 0;
+          let isBouncing = false;
+          let isAnimating = true;
+
+          function animate() {
+            if (!isAnimating) {
+              return;
+            }
+
+            if (!isBouncing) {
+              positionX += velocityX;
+              positionY += velocityY;
+              velocityY += 0.3; // 중력 적용
+              rotationAngle += velocityX; // 회전 속도 설정
+            }
+
+            if (positionY + imageSize >= boxHeight) {
+              // 이미지가 박스의 끝에 도달하면 튕김
+              positionY = boxHeight - imageSize; // 튕긴 위치로 설정
+              velocityY *= -0.6; // 튕길 때의 Y 속도 감쇠
+              velocityX *= 1; // X 속도 감쇠
+
+              if (Math.abs(velocityY) < 3) {
+                // 일정 속도 이하로 감쇠하면 애니메이션 종료
+                isBouncing = true;
+                velocityY = 0;
+                setTimeout(() => {
+                  isAnimating = false; // 일정 시간 후 애니메이션 종료
+                  image.style.pointerEvents = "auto";
+                });
+              }
+            }
+
+            image.style.transform = `translate(${positionX}px, ${positionY}px) rotate(${rotationAngle}deg)`;
+
+            if (isAnimating) {
+              requestAnimationFrame(animate);
+            }
+          }
+          animate();
+
+          // 마우스 이벤트 리스너 추가
+          image.addEventListener("mouseover", function () {
+            if (!isBouncing && isAnimating) {
+              velocityY *= -1.5; // 마우스를 대면 Y 속도를 역방향으로 증가시켜 튕김 효과 부여
+            }
+          });
+
+          // 마우스 아웃 이벤트 리스너 추가
+          image.addEventListener("mouseout", function () {
+            if (!isBouncing && isAnimating) {
+              velocityX = initialVelocityX; // X 속도를 초기 속도로 되돌림
+            }
+          });
+
+          // 애니메이션이 종료된 후 이미지를 통통 튀고 랜덤한 방향으로 튕겨나가는 효과를 줄 이벤트 리스너 추가
+
+          image.addEventListener("mouseenter", function () {
+            if (!isAnimating) {
+              const bounceSpeed = 2; // 튕김 속도
+              const bounceAngle = Math.random() * 360; // 튕김 각도 (0부터 360도 사이의 랜덤 값)
+              const bounceDistance = Math.random() * 100 + 50; // 튕김 거리 (50부터 150 사이의 랜덤 값)
+
+              velocityX = Math.cos(bounceAngle) * bounceSpeed;
+              velocityY = Math.sin(bounceAngle) * bounceSpeed;
+              positionX += velocityX;
+              positionY += velocityY;
+
+              function bounceAnimation() {
+                positionX += velocityX;
+                positionY += velocityY;
+                velocityY += -0.2; // 중력 적용
+                rotationAngle += velocityX; // 회전 속도 설정
+
+                image.style.transform = `translate(${positionX}px, ${positionY}px) rotate(${rotationAngle}deg)`;
+
+                if (Math.abs(velocityX) > 0.1 || Math.abs(velocityY) > 0.1) {
+                  requestAnimationFrame(bounceAnimation);
+                } else {
+                  isAnimating = false; // 애니메이션 종료
+                }
+              }
+
+              bounceAnimation();
+            }
+          });
+
+          image.addEventListener("mouseleave", function () {
+            if (!isAnimating) {
+              image.style.transform = `translate(${positionX}px, ${positionY}px) rotate(${rotationAngle}deg)`;
+            }
+          });
+        }
+      };
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
